@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "chatgpt prompt assister",
+  "description": "chatgpt prompt assister",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "action": {
+    "default_title": "Click to show an alert",
+    "default_popup": "popup.html",
+    "default_icon": "hello_jary.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
