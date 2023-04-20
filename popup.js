@@ -32,8 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
       default:
         result = develpData;
     }
+
     const textarea = document.querySelector("textarea");
     textarea.value = result + " " + sub;
+
+    // ui 강제로 붙여보기
+    const exDiv = document.createElement("div");
+    exDiv.textContent = "간단하게!";
+    document.querySelector("textarea").parentElement.appendChild(exDiv);
+    document.querySelector(".text-gray-800.w-full").firstChild.textContent =
+      "우리가 지배했다.";
   }
 
   document.querySelector("#jobSelect").addEventListener("change", (e) => {
