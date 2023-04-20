@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
     <title>Prompt assister</title>
   </head>
   <body>
     <div id="prompt_helper">
-      <div>
-        <span>직무: </span>
-        <select id="jobSelect">
+      <div class="form-group">
+        <label for="jobSelect">직무:</label>
+        <select id="jobSelect" class="form-control">
           <option value="Marketer">마케터</option>
           <option value="Designer">디자이너</option>
           <option value="Developer">개발자</option>
-          <option value="Planner">기획자</option>
-          <option value="HR">인사 담당</option>
-          <option value="Administrator">총무 담당</option>
         </select>
       </div>
-      <div>
-        <span>관심사: </span>
-        <input type="text" id="interest" placeholder="관심사를 입력해주세요" />
+      <div class="form-group">
+        <label for="interest">관심사:</label>
+        <input
+          type="text"
+          id="interest"
+          class="form-control"
+          placeholder="관심사를 입력해주세요"
+        />
       </div>
-      <button type="button" id="applyBtn">적용</button>
+      <button type="button" id="applyBtn" class="btn btn-primary">적용</button>
     </div>
     <script src="./background.js" type="module"></script>
     <script src="./popup.js" type="module"></script>
