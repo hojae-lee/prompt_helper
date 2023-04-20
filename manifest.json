@@ -3,13 +3,22 @@
   "name": "chatgpt prompt assister",
   "description": "chatgpt prompt assister",
   "version": "1.0",
-  "permissions": ["tabs", "activeTab", "scripting"],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "cookies",
+    "declarativeContent",
+    "storage"
+  ],
   "action": {
     "default_title": "Click to show an alert",
     "default_popup": "popup.html",
-    "default_icon": "hello_jary.png"
+    "default_icon": "hello_jary.png",
+    "icons": "hello_jary.png"
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "options_page": "options.html"
 }
